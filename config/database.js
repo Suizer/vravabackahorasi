@@ -5,11 +5,11 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'postgres',
-        host: env('DATABASE_HOST', '127.0.0.1'),
-        port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'vravaback'),
-        username: env('DATABASE_USERNAME', 'db_user'),
-        password: env('DATABASE_PASSWORD', 'vrava123'),
+        host: env('DATABASE_HOST', 'containers-us-west-8.railway.app'),
+        port: env.int('DATABASE_PORT', 6208),
+        database: env('DATABASE_NAME', 'railway'),
+        username: env('DATABASE_USERNAME', 'postgres'),
+        password: env('DATABASE_PASSWORD', 'loMuWWvTH4z1ouXbkoiL'),
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}
